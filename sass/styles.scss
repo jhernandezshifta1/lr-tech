@@ -1,0 +1,21 @@
+@import "./base/base";
+@import "./base/resets";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./components/opening";
+@import "./components/team";
+@import "./components/products";
+@import "./components/benefits";
+@import "./components/customers";
+@import "./components/technologies";
+@import "./components/contact";
+
+@include header_home;
+@include opening_home;
+@include team;
+@include products;
+@include benefits;
+@include customers-home;
+@include technologies-home;
+@include contact-home;
+@include footer_home;

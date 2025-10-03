@@ -1,0 +1,47 @@
+html{ 
+  scroll-behavior: smooth;
+}
+
+/* body - Define variables globales del contenido visible */
+/* Fuente tipográfica Hind de Google Fonts */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  display: block;
+  margin: 0 auto;
+}
+
+/* img - Define propiedade de las imágenes */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* formateo estilos de los textos */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: clamp(3.438rem, 2vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(2.813rem, 2vw, 5rem);
+}
+
+h3 {
+  font-size: clamp(1.125rem, 2vw, 1.563rem);
+}
+
+p {
+  font-size: clamp(1.125rem, 2vw, 1.125rem);
+}

@@ -1,0 +1,17 @@
+/* Definir propiedades del footer */
+@import "../abstracts/variables";
+
+@mixin footer-home {
+  footer {
+    background-color: $blue-dark;
+    padding: 1.875rem 0;
+    text-align: center;
+    margin-top: 3.125rem;
+
+    & span {
+      color: $white;
+      font-size: 1.125rem;
+      font-weight: 400;
+    }
+  }
+}

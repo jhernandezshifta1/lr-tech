@@ -5,55 +5,350 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>lr-tech</title>
+  <link rel="stylesheet" href="/sass/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <!--HEADER-->
   <header>
-    <div class="menu content">
+    <div class="menu">
       <!--LOGO-->
-      <a href="index.html" class="logo"><img src="#" alt="Lr-tech"></a>
+      <a href="#inicio" class="logo"><img src="/assets/Logo.svg" alt="Lr-tech"></a>
 
       <!--MAIN MENU-->
       <nav class="main-menu">
         <!--LISTA MENU-->
         <ul>
-          <li><a href="#">Quiénes somos</a></li>
-          <li><a href="#">Beneficios</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Clientes</a></li>
-          <li><a href="#">Tecnologías</a></li>
+          <li><a href="#section1">Quiénes somos</a></li>
+          <li><a href="#section2">Productos</a></li>
+          <li><a href="#section3">Beneficios</a></li>
+          <li><a href="#section4">Clientes</a></li>
+          <li><a href="#section5">Tecnologías</a></li>
         </ul>
       </nav>
       <!--SETTINGS (íconos y avatar)-->
-      <div class="lenguage">
-        <div class="icon-world"><svg></svg></div>
-        <a href="#">EN</a>
-        <a href="#">ES</a>
+      <div class="btn-nav">
+        <div class="language">
+          <span class="material-symbols-outlined">
+            language
+          </span>
+          <button class="btn-language">
+            <span class="btn-es">ES</span>
+            <span class="btn-en">EN</span>
+          </button>
+        </div>
+        <a href="#section6" class="btn-primary">CONTÁCTENOS</a>
       </div>
-      <a href="#">Contáctenos</a>
+
     </div>
   </header>
+  <!--MAIN-->
   <main>
-    <section class="opening">
-      <div class="container opening-info">
-        <h2>La transformación digital no es el futuro, es el presente.</h2>
+    <section id="inicio" class="opening">
+      <div class="opening-info">
+        <h1>La transformación digital no es el futuro, es el presente.</h1>
         <p>Únete a LR TECH y accede a herramientas, conocimiento y servicios tecnológicos que llevarán a tu empresa al
           siguiente nivel.</p>
+        <img src="/assets/apertura-1.png" alt="">
       </div>
-      <div class="">
-        <img src="#" alt="">
-        <div class="brands">
-          <svg></svg>
-          <svg></svg>
-          <svg></svg>
-          <svg></svg>
-          <svg></svg>
+      <div class="container brands">
+        <img src="/assets/CC.svg" alt="Central Cervecera">
+        <img src="/assets/rcn.svg" alt="Noticias RCN">
+        <img src="/assets/ntn.png" alt="Noticias RCN">
+        <img src="/assets/win.svg" alt="Noticias RCN">
+        <img src="/assets/lafm.svg" alt="Noticias RCN">
+        <img src="/assets/lr.svg" alt="Noticias RCN">
+      </div>
+    </section>
+    <section id="section1" class="container team">
+      <div>
+        <h2><span class="blue">¿Qué es el equipo</span> <span class="red">LR TECH?</span></h2>
+        <p>Fue creado en el 2017 con el objetivo de mostrar soluciones a aquellas empresas que quieren una plataforma
+          robusta, escalable y de alta disponibilidad, alineada con los últimos estándares para sitios informativos.</p>
+      </div>
+      <div class="box-lr">
+        <div class="box-txt">
+          <h3>Diario La República</h3>
+          <p>Es el primer diario económico del país, especializado en información económica, financiera y empresarial,
+            con información local e internacional.</p>
+          <p>Este medio agrupa varias unidades de negocio entre estos LR TECH, que ofrecen productos y servicios a
+            empresas.</p>
+          <a href="#section3">CONOCER BENEFICIOS</a>
+        </div>
+        <div class="box-img">
+          <img src="/assets/360.png" alt="La República 360">
+        </div>
+      </div>
+    </section>
+    <section id="section2" class="products">
+      <div class="container products-info">
+        <div>
+          <h2>Productos</h2>
+          <p>En LR Tech reunimos las herramientas que necesitas para llevar tu negocio al siguiente nivel.</p>
+        </div>
+        <div class="product-01">
+          <img src="/assets/product-01.png" alt="Multiplataforma">
+          <div class="product-txt">
+            <h3>Monetización Digital</h3>
+            <ul>
+              <li>Aumento de ingresos por publicidad programática.</li>
+              <li>Modelos de negocio sostenibles con suscripciones.</li>
+              <li>Gestión de inventario publicitario.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-01 reverse">
+          <img src="/assets/product-02.png" alt="Multiplataforma">
+          <div class="product-txt">
+            <h3>Soporte Estratégico y Consultoría</h3>
+            <ul>
+              <li>Actualizaciones continuas con nuevas prácticas.</li>
+              <li>Equipo experto siempre disponible.</li>
+              <li>Soluciones adaptadas a cada cliente.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-01">
+          <img src="/assets/product-01.png" alt="Multiplataforma">
+          <div class="product-txt">
+            <h3>Infraestructura y escalabilidad</h3>
+            <ul>
+              <li>Estabilidad en eventos de alto impacto.</li>
+              <li>Menor latencia y caídas mínimas.</li>
+              <li>Plataforma lista para crecer con el negocio.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-01 reverse">
+          <img src="/assets/product-02.png" alt="Multiplataforma">
+          <div class="product-txt">
+            <h3>Productividad de la sala de redacción</h3>
+            <ul>
+              <li>Tableros de control para supervisores/editorial.</li>
+              <li>Indicadores de rendimiento: artículos diarios, revisiones, tiempos de publicación.</li>
+              <li>VPN, servidores, respaldo de datos, acceso seguro.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
     </section>
+    <section id="section3" class="benefits">
+      <h2>Beneficios</h2>
+      <p>Lorem ipsum dolor sit amet consectetur. Orci in tortor non amet ultrices eu aliquam senectus massa.</p>
+      <div class="container">
+        <div class="box-benefits">
+          <div class="column-info">
+            <div class="benefits-01">
+              <img src="/assets/benefics-01.svg" alt="">
+              <div class="info-txt">
+                <h3>Gestión de Contenido Digital (CMS Headless)</h3>
+                <ul>
+                  <li>Flujos editoriales eficientes.</li>
+                  <li>Mayor rapidez en la publicación.</li>
+                  <li>Escalabilidad para grandes volúmenes de información.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="benefits-01">
+              <img src="/assets/benefits-02.svg" alt="">
+              <div class="info-txt">
+                <h3>Gestión de Contenido Digital (CMS Headless)</h3>
+                <ul>
+                  <li>Flujos editoriales eficientes.</li>
+                  <li>Mayor rapidez en la publicación.</li>
+                  <li>Escalabilidad para grandes volúmenes de información.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="benefits-01">
+              <img src="/assets/benefits-03.svg" alt="CMS Headless">
+              <div class="info-txt">
+                <h3>Gestión de Contenido Digital (CMS Headless)</h3>
+                <ul>
+                  <li>Flujos editoriales eficientes.</li>
+                  <li>Mayor rapidez en la publicación.</li>
+                  <li>Escalabilidad para grandes volúmenes de información.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="phone">
+            <img src="/assets/phone.png" alt="phone">
+          </div>
+        </div>
+      </div>
+
+      <div class="projects">
+        <div>
+          <h3>Proyectos</h3>
+          <p>Lorem ipsum dolor sit amet consectetur. Orci in tortor non amet ultrices eu aliquam senectus massa.</p>
+        </div>
+        <div class="container carrusel">
+          <img src="/assets/andina.png" alt="">
+          <img src="/assets/noticias-rcn.png" alt="">
+          <img src="/assets/ntn-24mobile.png" alt="">
+          <img src="/assets/win-mobile.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="section4" class="customers">
+      <div class="container customers-info">
+        <div>
+          <h2>Clientes</h2>
+          <p>Cada proyecto es una historia de innovación y crecimiento.</p>
+          <p>Lo invitamos a explorar los clientes que hacen parte de LR Tech y a inspirarte con los resultados que hemos
+            logrado juntos.</p>
+        </div>
+        <div class="b-customers">
+          <div class="box-customers"><img src="/assets/CC.svg" alt=""></div>
+          <div class="box-customers"><img src="/assets/rcn.svg" alt=""></div>
+          <div class="box-customers"><img src="/assets/ntn.png" alt=""></div>
+          <div class="box-customers"><img src="/assets/win.svg" alt=""></div>
+          <div class="box-customers"><img src="/assets/lafm.svg" alt=""></div>
+          <div class="box-customers"><img src="/assets/lr.svg" alt=""></div>
+          <div class="box-customers"><img src="/assets/alerta.svg" alt=""></div>
+          <div class="box-customers"><img src="/assets/antena.svg" alt=""></div>
+          <div class="box-customers"><img src="/assets/periodicos.png" alt=""></div>
+          <div class="box-customers"><img src="/assets/agronegocios.png" alt=""></div>
+          <div></div>
+          <div class="box-customers"><img src="/assets/AL.svg" alt=""></div>
+          <div class="box-customers"><img src="/assets/pym.png" alt=""></div>
+          <div class="box-customers"><img src="/assets/LogoSL.svg" alt=""></div>
+          <div></div>
+        </div>
+        <div class="testimonials">
+          <div class="text-t">
+            <h3>Testimonios</h3>
+            <p>La confianza se construye con resultados.</p>
+            <p>Conoce los testimonios de las empresas que han transformado su presencia digital.</p>
+
+          </div>
+          <div class="box-t">
+            <div class="txt-box">"Tener el apoyo de La República es sumar a nuestra estrategia la más amplia experiencia
+              en desarrollo digital para la construcción de audiencias. Es contar con un equipo del más alto nivel, que
+              entiende la tecnología como una herramienta que se adapta para lograr el impacto que busca nuestra
+              organización."</div>
+            <div class="person">
+              <img src="/assets/cliente-01.png" alt="Mauricio Aragón">
+              <div>
+                <div class="name">Mauricio Aragón</div>
+                <div class="post">Director digital NTN24</div>
+              </div>
+            </div>
+          </div>
+          <div class="box-t">
+            <div class="txt-box">"LR Tech ha sido un aliado importante y estratégico en la evolución de nuestros
+              proyectos, quienes nos han aportado toda su experiencia y acompañamiento tecnológico en pro de nuestros
+              objetivos de
+              construir audiencias de valor en nuestros activos digitales, así como en la generación de ingresos
+              sostenibles a través de una herramienta estable y con las mejores prácticas de la industria.""</div>
+            <div class="person">
+              <img src="/assets/Cliente-03.png" alt="Lucero Martinez">
+              <div>
+                <div class="name">Lucero Martinez</div>
+                <div class="post">Gerente digital de CANAL RCN <br>(SUPERLIKE - NOTICIAS RCN)</div>
+              </div>
+            </div>
+          </div>
+          <div class="box-t">
+            <div class="txt-box">"Hicimos un cambio estratégico al migrar nuestra página con LR, un aliado con un
+              servicio excepcional. Esta decisión nos ha permitido optimizar el rendimiento, mejorar los indicadores y
+              potenciar
+              el crecimiento. Los resultados reflejan un ecosistema digital más eficiente y una mejor experiencia para
+              nuestra audiencia."</div>
+            <div class="person">
+              <img src="/assets/cliente02.png" alt="">
+              <div>
+                <div class="name">Leonardo Gonzalez</div>
+                <div class="post">Vicepresidente digital de WINSPORTS</div>
+              </div>
+            </div>
+          </div>
+          <div class="box-t">
+            <div class="txt-box">"Con el equipo de La República, hemos logrado fortalecer nuestro portal web gracias a
+              su
+              conocimiento, soporte y asesoría estratégica. Mejoramos nuestra presencia digital, gracias a su
+              experiencia
+              y entendimiento de los activos digitales de los medios de comunicación, orientando a nuestro equipo de
+              contenidos, comercial y de mercadeo."</div>
+            <div class="person">
+              <img src="/assets/Cliente-04png.png" alt="Carlos Fernando Vega">
+              <div>
+                <div class="name">Carlos Fernando Vega</div>
+                <div class="post">Director Revista P&M</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="section5" class="technologies">
+      <div class="container tech-info">
+        <div>
+          <h2>Tecnologías</h2>
+          <p>La innovación comienza con la tecnología adecuada.</p>
+          <p>Descubre las soluciones que utilizamos para crear experiencias digitales que marcan la diferencia.</p>
+        </div>
+        <div class="group-tech-01">
+          <div class="box-tech"><img src="/assets/amazon.png" alt=""></div>
+          <div class="box-tech"><img src="/assets/google.png" alt=""></div>
+          <div class="box-tech"><img src="/assets/net.png" alt=""></div>
+          <div class="box-tech"><img src="/assets/fastly.png" alt=""></div>
+        </div>
+        <div class="group-tech-02">
+          <div class="box-tech"><img src="/assets/react.png" alt="">
+            <h4>React</h4>
+          </div>
+          <div class="box-tech"><img src="/assets/vue.png" alt="">
+            <h4>Vue</h4>
+          </div>
+          <div class="box-tech"><img src="/assets/node.png" alt="">
+            <h4>Node JS</h4>
+          </div>
+          <div class="box-tech"><img src="/assets/next.png" alt="">
+            <h4>Next JS</h4>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="section6" class="container contact">
+      <form action="#" method="post">
+        <h2>Contáctenos </h2>
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Pepito Perez" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="john@email.com" required>
+
+        <!-- Número -->
+        <label for="numero">Número:</label>
+        <input type="tel" id="numero" name="numero" placeholder="543210987" required>
+
+        <!-- Mensaje -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+
+        <!-- Botón -->
+        <button type="submit">Enviar</button>
+      </form>
+      <img src="/assets/contact-image.png" alt="">
+    </section>
   </main>
+  <!--FOOTER-->
+  <footer>
+    <span><strong>© 2025, Editorial La República S.A.S.</strong>Todos los derechos reservados</span>
+  </footer>
 </body>
 
 </html>

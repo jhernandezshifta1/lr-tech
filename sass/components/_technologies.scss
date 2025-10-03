@@ -1,0 +1,53 @@
+@import "../abstracts/variables";
+
+@mixin technologies_home {
+  .technologies {
+    background: linear-gradient(180deg, #FFF 0%, #F7F9FF 10%);
+    text-align: center;
+    padding: 3.125rem 0;
+
+    .tech-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3.125rem;
+      align-items: center;
+
+      h2 {
+        color: $blue-dark;
+      }
+
+      .box-tech {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid $blue-dark;
+        background: $blue-white;
+            gap: 1rem;
+        img {
+          width: 50%;
+        }
+      }
+
+      .group-tech-01 {
+        display: flex;
+        gap: 3.125rem;
+
+        .box-tech {
+          width: 250px;
+          height: 250px;
+        }
+      }
+      .group-tech-02 {
+        display: flex;
+        gap: 3.125rem;
+
+        .box-tech {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}

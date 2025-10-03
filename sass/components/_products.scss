@@ -1,0 +1,60 @@
+@import "../abstracts/variables";
+
+@mixin products {
+  .products {
+    background: $blue-white;
+    padding: 3.125rem 0;
+
+    .products-info {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 3.125rem;
+
+      h2 {
+        color: $blue-dark;
+      }
+
+
+      & .product-01 {
+        display: flex;
+        gap: 3.125rem;
+
+        .product-txt {
+          width: 80%;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1.25rem;
+
+          & h3 {
+            color: $red;
+          }
+
+          ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            flex-direction: column;
+            gap: 20px;
+
+            & li {
+              font-size: 18px;
+
+              &::before {
+                content: "✓ ";
+              }
+            }
+
+          }
+        }
+      }
+
+      .reverse {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
